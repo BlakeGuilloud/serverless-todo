@@ -5,8 +5,6 @@ package:
   exclude:
     - node_modules/**
 
-frameworkVersion: ">=1.1.0 <2.0.0"
-
 provider:
   name: aws
   runtime: nodejs4.3
@@ -25,9 +23,6 @@ provider:
 
 functions:
   create:
-    package:
-      include:
-        - node_modules/**
     handler: todos/create.create
     events:
       - http:
